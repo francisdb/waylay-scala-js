@@ -6,16 +6,16 @@ Run below commands in the `sbt` console
 ## Test run script
 
 ```sbt
-run
+test
 ```
 
 ## Create script
 
 ```sbt
-fastOptJS
+fullLinkJS
 ```
 
-Will create `./target/scala-2.13/waylay-scala-js-fastopt.js` which for now you need to copy paste into the waylay console.
+Will create `./target/scala-2.13/waylay-scala-js-opt/main.js` which for now you need to copy-paste into the Waylay console.
 
 ## Deploy
 
