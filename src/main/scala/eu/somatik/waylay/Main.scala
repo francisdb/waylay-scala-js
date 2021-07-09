@@ -1,14 +1,14 @@
 package eu.somatik.waylay
 
-import eu.somatik.waylay.ExamplePlugin.run
-
 import scala.concurrent.ExecutionContext.Implicits.global
 import scala.scalajs.js
 import scala.scalajs.js.annotation.JSGlobalScope
 
 object Main {
   def main(args: Array[String]): Unit = {
-    run(Globals.options).map { case (err, result) => Globals.send(err, result) }
+    ExamplePlugin.run(Globals.options).map { case (err, result) =>
+      Globals.send(err, result)
+    }
   }
 }
 
