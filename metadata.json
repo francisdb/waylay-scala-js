@@ -1,0 +1,15 @@
+{
+  "name": "scalajs",
+  "version": "0.0.1",
+  "type": "sensor",
+  "metadata": {
+    "configuration": [],
+    "requiredProperties": [],
+    "rawData": [],
+    "supportedStates": [
+      "success",
+      "failure"
+    ]
+  },
+  "dependencies": {}
+}
