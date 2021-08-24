@@ -3,8 +3,17 @@
   "version": "0.0.1",
   "type": "sensor",
   "metadata": {
-    "configuration": [],
-    "requiredProperties": [],
+    "configuration": [
+      {
+        "name": "param1",
+        "type": "string",
+        "mandatory": true,
+        "defaultValue": ""
+      }
+    ],
+    "requiredProperties": [
+      "param1"
+    ],
     "rawData": [],
     "supportedStates": [
       "success",

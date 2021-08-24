@@ -67,7 +67,9 @@ object WaylayPlugin extends AutoPlugin {
         readTimeout = Duration.ofMinutes(2).toMillis.toInt
       )
       log.info(s"status: ${r.statusCode}")
-      log.info(s"response: ${r.text}")
+      val json = Json.parse(r.text)
+      val uri = (json \ "uri").as[String]
+      log.info(s"uri: $uri")
     }
   )
 }
